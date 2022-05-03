@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #6f6c6c;
+}
+.container-fluid{
+    width: 100%;
+}
+.container{
+    width:1170px;
+    margin: auto;
+}
+.dissplay-flex{
+    display: flex;
+}
+.logo-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 900px;
+    margin-top: 20px;
+}
+.about-p{
+    font-family: 'Square Peg', cursive;
+    font-size: 36px;
+}
+.logo-sect h1{
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.logo-sect p{
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.color-Span-blu{
+    color:#36abe5;
+}
+.padding-top-btm{
+    padding:50px 0;
+}
+.img-box{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.img-arrow{
+    position: relative;
+    height: 25px;
+    top: 100px;
+}
+.img-box-inner{
+    display: flex;
+    gap: 22px;
+}
+.inner-box-eff{
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-left: 7px solid #d08c29;
+}
+.eff-hover:hover .inner-box-eff{
+   /* content: "BLUE GUM WALK"; */
+    height: 250px;
+    color: #fff;
+    width: 250px;
+    background: #d08c29a8;
+    position: absolute;
+    top: 0;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+   
+}
+.position-relative{
+    position: relative;
+}
+/* test */
+.cursor {
+    cursor: pointer;
+  }
+
+  .mySlides {
+    display: none;
+  }
+  /* test */
+  .text-center{
+      text-align: center;
+  }
+  .walking-slider-p{
+    width: 700px;
+    margin: auto;
+    padding-top: 22px;
+  }
+  
+  @media screen and (min-width:320px) and (max-width: 480px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        color: #6f6c6c;
+    }
+    .container{
+        width: 90%;
+    }
+    .img-box {
+        display: inline;
+        /* text-align: center; */
+        /* justify-content: space-between; */
+    }
+    .img-box-inner {
+        display: inline;
+        width: 100%;
+    }
+    .mobile-view-100{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .eff-hover:hover .inner-box-eff{
+        /* content: "BLUE GUM WALK"; */
+         height: 250px;
+         color: #fff;
+         width: 100%;
+         background: #d08c29a8;
+         position: absolute;
+         top: 0;
+         border: none;
+         align-items: center;
+         justify-content: center;
+         display: flex;
+         font-size: 18px;
+        
+     }
+     .inner-box-eff {
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        border-left: 7px solid #d08c29;
+    }
+    .display-mobile-none{
+        display:none;
+    }
+    .walking-slider-p {
+        width: 100%;
+        margin: auto;
+        padding-top: 22px;
+    }
+  }
+
+  @media screen and (min-width:315px) and (max-width: 769px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        color: #6f6c6c;
+    }
+    .container{
+        width: 90%;
+    }
+    .img-box {
+        display: inline;
+        /* text-align: center; */
+        /* justify-content: space-between; */
+    }
+    .img-box-inner {
+        display: inline;
+        width: 100%;
+    }
+    .mobile-view-100{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .eff-hover:hover .inner-box-eff{
+        /* content: "BLUE GUM WALK"; */
+         height: 250px;
+         color: #fff;
+         width: 100%;
+         background: #d08c29a8;
+         position: absolute;
+         top: 0;
+         border: none;
+         align-items: center;
+         justify-content: center;
+         display: flex;
+         font-size: 18px;
+        
+     }
+     .inner-box-eff {
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        border-left: 7px solid #d08c29;
+    }
+    .display-mobile-none{
+        display:none;
+    }
+    .walking-slider-p {
+        width: 100%;
+        margin: auto;
+        padding-top: 22px;
+    }
+  }
+
+ 

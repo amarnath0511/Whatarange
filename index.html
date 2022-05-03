@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatarage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <Header class="container-fluid">
+        <div class="container logo-sect">
+            <img src="images/shoe_icon.png" alt="shoe" width="50px" height="auto" >
+            <p class="about-p">About the</p>
+            <h1>WALKING <span class="color-Span-blu">TRACKS</span> </h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem illum perspiciatis aperiam molestiae Tempora exercitationem illum perspiciatis aperiam molestiae</P>
+        </div>
+    </Header>
+    <section class="container-fluid padding-top-btm">
+        <div class="container img-box">
+            <a class="prev" onclick="plusSlides(-1)">
+            <img class="img-arrow display-mobile-none" src="images/arrow_left.png" alt="left-arrow" width="25px" height="auto">
+            </a>
+
+            <div class="img-box-inner">
+                <!-- Four image -->
+                <div class="position-relative eff-hover">
+                    <img class="demo cursor mobile-view-100" src="images/image1.jpg" alt="imgae1" width="250px" height="250px" onclick="currentSlide(1)">
+                    <h1 class="inner-box-eff">
+                        BLUE GUM WALK
+                    </h1>   
+                </div> 
+
+
+                <div class="position-relative eff-hover">
+                     <img class="demo cursor mobile-view-100" src="images/image2.jpg" alt="imgae1" width="250px" height="250px" onclick="currentSlide(2)">
+                     <h1 class="inner-box-eff">
+                        CALLICOMA WALK
+                    </h1>
+                </div>  
+                <div class="position-relative eff-hover">
+                    <img class="demo cursor mobile-view-100" src="images/image3.jpg" alt="imgae1" width="250px" height="250px"  onclick="currentSlide(3)">
+                    <h1 class="inner-box-eff">
+                        MAMBARA WALK
+                    </h1>
+                </div>
+                <div class="position-relative eff-hover">
+                    <img class="demo cursor mobile-view-100" src="images/image4.jpg" alt="imgae1" width="250px" height="250px"  onclick="currentSlide(4)">
+                    <h1 class="inner-box-eff">
+                        TERRYS CREEK WALK
+                    </h1>
+                </div>
+            <!-- four image -->
+            </div>
+
+            <a class="next" onclick="plusSlides(1)">
+                <img class="img-arrow display-mobile-none" src="images/arrow_right.png" alt="right-arrow" width="25px" height="auto">
+            </a>
+        </div>
+    </section>
+
+    <section class="container-fluid padding-top-btm">
+        <div class="container text-center">
+            <div class="mySlides">   
+                <h1>BLUE GUM  <span class="color-Span-blu">WALK</span> </h1>
+            <P class="walking-slider-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem illum perspiciatis aperiam molestiae Tempora exercitationem illum perspiciatis aperiam molestiae</P>
+              
+             </div>
+    
+             <div class="mySlides">   
+                <h1>CALLICOMA <span class="color-Span-blu">WALK</span> </h1>
+            <P class="walking-slider-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem illum perspiciatis aperiam molestiae Tempora exercitationem illum perspiciatis aperiam molestiae</P>
+              
+             </div>
+
+             <div class="mySlides">   
+                <h1>MAMBARA <span class="color-Span-blu">WALK</span> </h1>
+                <P class="walking-slider-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem illum perspiciatis aperiam molestiae Tempora exercitationem illum perspiciatis aperiam molestiae</P>
+              
+             </div>
+
+             <div class="mySlides">   
+                <h1>TERRYS CREEK <span class="color-Span-blu">WALK</span> </h1>
+                <P class="walking-slider-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem illum perspiciatis aperiam molestiae Tempora exercitationem illum perspiciatis aperiam molestiae</P>
+              
+             </div>
+        </div>
+       
+    </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+  
+</body>
+</html>
