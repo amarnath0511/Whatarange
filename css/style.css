@@ -15,6 +15,9 @@
 .dissplay-flex{
     display: flex;
 }
+.background-pattern{
+    background-image: url(../template/images/pattern.JPG);
+}
 .logo-sect{
     display: flex;
     flex-direction: column;
@@ -26,6 +29,18 @@
 .about-p{
     font-family: 'Square Peg', cursive;
     font-size: 36px;
+    flex-basis: 40%;
+}
+.about-line-middle{
+    display: flex;
+    width: 35%;
+    align-items: center;
+}
+.about-line{
+    background: #726f6f;
+    width: 100%;
+    height: 1px;
+    flex-basis: 30%;
 }
 .logo-sect h1{
     font-weight: 100;
@@ -35,12 +50,14 @@
     font-weight: 100;
     letter-spacing: 1px;
     text-align: center;
+    line-height: 1.5;
 }
+
 .color-Span-blu{
     color:#36abe5;
 }
 .padding-top-btm{
-    padding:50px 0;
+    padding:35px 0;
 }
 .img-box{
     display: flex;
@@ -51,6 +68,8 @@
     position: relative;
     height: 25px;
     top: 100px;
+    width: 14px;
+    cursor: pointer;
 }
 .img-box-inner{
     display: flex;
@@ -99,9 +118,22 @@
     width: 700px;
     margin: auto;
     padding-top: 22px;
+    color: #6f6c6c;
+    line-height: 1.5;
   }
-  
-  @media screen and (min-width:320px) and (max-width: 480px){
+  .txt-box-footer{
+    background: #fff;
+    border-top: 1px solid #b5b5b5;
+    position: relative;
+  }
+  .close-btm-footer{
+    width: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  /* media code */
+  @media screen and (min-width:360px) and (max-width: 740px ){
 
     *{
         margin: 0;
@@ -125,6 +157,11 @@
     .mobile-view-100{
         width: 100%;
         margin-bottom: 20px;
+    }
+    .about-line-middle {
+        display: flex;
+        width: 85%;
+        align-items: center;
     }
     .eff-hover:hover .inner-box-eff{
         /* content: "BLUE GUM WALK"; */
@@ -160,7 +197,7 @@
     }
   }
 
-  @media screen and (min-width:315px) and (max-width: 769px){
+  @media screen and (min-width:820px) and (max-width: 1180px){
 
     *{
         margin: 0;
@@ -172,27 +209,32 @@
     .container{
         width: 90%;
     }
+    .about-line-middle {
+        display: flex;
+        width: 45%;
+        align-items: center;
+    }
     .img-box {
         display: inline;
-        /* text-align: center; */
-        /* justify-content: space-between; */
+       
     }
     .img-box-inner {
         display: inline;
         width: 100%;
     }
     .mobile-view-100{
-        width: 100%;
+        width: 50%;
         margin-bottom: 20px;
     }
     .eff-hover:hover .inner-box-eff{
-        /* content: "BLUE GUM WALK"; */
+     
          height: 250px;
          color: #fff;
-         width: 100%;
+         width: 50%;
          background: #d08c29a8;
          position: absolute;
          top: 0;
+         left: 206px;
          border: none;
          align-items: center;
          justify-content: center;
@@ -207,7 +249,7 @@
         color: #fff;
         font-size: 18px;
         padding: 10px;
-        border-left: 7px solid #d08c29;
+        border-left: none;
     }
     .display-mobile-none{
         display:none;
